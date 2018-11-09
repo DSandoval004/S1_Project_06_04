@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Diego Sandoval
+   Date: 11/9/18
+	
+   Filename: br_styles.css
+
+*/
+
+/* html and body */
+html {
+    width: 100%;
+    background-image: url(br_paper.png);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+    width: 75%;
+    height: fit-content;
+    background: white;
+    box-shadow: 5px 0px 25px, -5px 0px 25px;
+
+}
+
+body a:link,
+body a:visited,
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Rows and Columns */
+.row {
+    clear: both;
+}
+
+.col-1-4 {
+    width: 25%;
+    float: left;
+}
+
+.col-3-4 {
+    width: 75%;
+    float: left;
+}
+
+/* Header */
+body header {
+    background: gray;
+}
+
+/* Nav Bar */
+nav#topNavBar {
+    clear: both;
+    width: 100%;
+}
+
+nav#topNavBar ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    background: linear-gradient(gray, white);
+}
+
+nav#topNavBar ul li:hover,
+nav#topNavBar ul li:active {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+/* Aside */
+body aside {
+    width: 90%;
+    padding: 10px 10px;
+    margin: 10px auto;
+    border: 1px solid gray;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background: radial-gradient(white, gray);
+    box-shadow: 5px 5px 10px;
+}
+
+/* Article */
+body article {
+    width: 98%;
+    padding: 10px 10px;
+    margin: 10px auto;
+}
+
+/* Article Links */
+nav#moInfo {
+    clear: both;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+nav#moInfo ul li {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+nav#moInfo ul li:hover,
+nav#moInfo ul li:active {
+    background: radial-gradient(white, gray);
+}
+
+/* Different Views */
+.hide {
+    display: none;
+}
+
+div#viewBox {
+    width: 95%;
+    min-height: 225px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+div#selectorBox {
+    width: 20%;
+    height: 100%;
+}
+
+div#selectorBox ul li {
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+div#selectorBox ul li:hover,
+div#selectorBox ul li:active {
+    background: radial-gradient(white, gray);
+}
