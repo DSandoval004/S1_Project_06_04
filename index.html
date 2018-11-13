@@ -82,32 +82,97 @@
     <div class="row">
         <div id="viewBox">
             <div id="selectorBox">
+                <p>Hover over to see Image pop up in the box, click on the view to have a zoomed in picture pop up.</p>
                 <ul>
-                    <li><a href="#" id="view1" class="views" onmouseover="document.getElementById('photo1').style.display='block'">Front
-                            View</a></li>
-                    <li><a href="#" id="view2" class="views">Rear View</a></li>
-                    <li><a href="#" id="view3" class="views">Side View</a></li>
-                    <li><a href="#" id="view4" class="views">Dining Room</a></li>
-                    <li><a href="#" id="view5" class="views">Kitchen</a></li>
-                    <li><a href="#" id="view6" class="views">Living Room</a></li>
-                    <li><a href="#" id="view7" class="views">Bedroom 1</a></li>
-                    <li><a href="#" id="view8" class="views">Bedroom 2</a></li>
-                    <li><a href="#" id="view9" class="views">Bedroom 3</a></li>
+                    <li onclick="popUp1()" id="view1" class="views" onmouseenter="document.getElementById('photo1').style.display='block'"
+                        onmouseout="document.getElementById('photo1').style.display='none'">Front
+                        View</li>
+                    <li onclick="popUp2()" id="view2" class="views" onmouseenter="document.getElementById('photo2').style.display='block'"
+                        onmouseout="document.getElementById('photo2').style.display='none'">Rear
+                        View</li>
+                    <li onclick="popUp3()" id="view3" class="views" onmouseenter="document.getElementById('photo3').style.display='block'"
+                        onmouseout="document.getElementById('photo3').style.display='none'">Side
+                        View</li>
+                    <li onclick="popUp4()" id="view4" class="views" onmouseenter="document.getElementById('photo4').style.display='block'"
+                        onmouseout="document.getElementById('photo4').style.display='none'">Dining
+                        Room</li>
+                    <li onclick="popUp5()" id="view5" class="views" onmouseenter="document.getElementById('photo5').style.display='block'"
+                        onmouseout="document.getElementById('photo5').style.display='none'">Kitchen</li>
+                    <li onclick="popUp6()" id="view6" class="views" onmouseenter="document.getElementById('photo6').style.display='block'"
+                        onmouseout="document.getElementById('photo6').style.display='none'">Living
+                        Room</li>
+                    <li onclick="popUp7()" id="view7" class="views" onmouseenter="document.getElementById('photo7').style.display='block'"
+                        onmouseout="document.getElementById('photo7').style.display='none'">Bedroom
+                        1</li>
+                    <li onclick="popUp8()" id="view8" class="views" onmouseenter="document.getElementById('photo8').style.display='block'"
+                        onmouseout="document.getElementById('photo8').style.display='none'">Bedroom
+                        2</li>
+                    <li onclick="popUp9()" id="view9" class="views" onmouseenter="document.getElementById('photo9').style.display='block'"
+                        onmouseout="document.getElementById('photo9').style.display='none'">Bedroom
+                        3</li>
                 </ul>
             </div>
             <div id="photoBox">
-                <img src="br_photo1.png" alt="" class="hide" id="photo1">
-                <img src="br_photo2.png" alt="" class="hide" id="photo2">
-                <img src="br_photo3.png" alt="" class="hide" id="photo3">
-                <img src="br_photo4.png" alt="" class="hide" id="photo4">
-                <img src="br_photo5.png" alt="" class="hide" id="photo5">
-                <img src="br_photo6.png" alt="" class="hide" id="photo6">
-                <img src="br_photo7.png" alt="" class="hide" id="photo7">
-                <img src="br_photo8.png" alt="" class="hide" id="photo8">
-                <img src="br_photo9.png" alt="" class="hide" id="photo9">
+                <img src="br_photo1.png" alt="Image 1: Front View" class="hide photos" id="photo1">
+                <img src="br_photo2.png" alt="Image 2: Rear View" class="hide photos" id="photo2">
+                <img src="br_photo3.png" alt="Image 3: Side View" class="hide photos" id="photo3">
+                <img src="br_photo4.png" alt="Image 4: Dining Room" class="hide photos" id="photo4">
+                <img src="br_photo5.png" alt="Image 5: Kitchen" class="hide photos" id="photo5">
+                <img src="br_photo6.png" alt="Image 6: Living Room" class="hide photos" id="photo6">
+                <img src="br_photo7.png" alt="Image 7: Bedroom 1" class="hide photos" id="photo7">
+                <img src="br_photo8.png" alt="Image 8: Bedroom 2" class="hide photos" id="photo8">
+                <img src="br_photo9.png" alt="Image 9: Bedroom 3" class="hide photos" id="photo9">
             </div>
         </div>
     </div>
+    <div>
+        <figure id="img1" class="hide popUp views">
+            <button onclick="document.getElementById('img1').style.display='none'">X</button>
+            <figcaption>Front View</figcaption>
+            <img src="br_photo1.png" alt="Image 1: Front View" class="photo">
+        </figure>
+        <figure id="img2" class="hide popUp views">
+            <button onclick="document.getElementById('img2').style.display='none'">X</button>
+            <figcaption>Rear View</figcaption>
+            <img src="br_photo2.png" alt="Image 2: Rear View" class="photo">
+        </figure>
+        <figure id="img3" class="hide popUp views">
+            <button onclick="document.getElementById('img3').style.display='none'">X</button>
+            <figcaption>Side View</figcaption>
+            <img src="br_photo3.png" alt="Image 3: Side View" class="photo">
+        </figure>
+        <figure id="img4" class="hide popUp views">
+            <button onclick="document.getElementById('img4').style.display='none'">X</button>
+            <figcaption>Dining Room</figcaption>
+            <img src="br_photo4.png" alt="Image 4: Dining Room" class="photo">
+        </figure>
+        <figure id="img5" class="hide popUp views">
+            <button onclick="document.getElementById('img5').style.display='none'">X</button>
+            <figcaption>Kitchen</figcaption>
+            <img src="br_photo5.png" alt="Image 5: Kitchen" class="photo">
+        </figure>
+        <figure id="img6" class="hide popUp views">
+            <button onclick="document.getElementById('img6').style.display='none'">X</button>
+            <figcaption>Living Room</figcaption>
+            <img src="br_photo6.png" alt="Image 6: Living Room" class="photo">
+        </figure>
+        <figure id="img7" class="hide popUp views">
+            <button onclick="document.getElementById('img7').style.display='none'">X</button>
+            <figcaption>Bedroom 1</figcaption>
+            <img src="br_photo7.png" alt="Image 7: Bedroom 1" class="photo">
+        </figure>
+        <figure id="img8" class="hide popUp views">
+            <button onclick="document.getElementById('img8').style.display='none'">X</button>
+            <figcaption>Bedroom 2</figcaption>
+            <img src="br_photo8.png" alt="Image 8: Bedroom 2" class="photo">
+        </figure>
+        <figure id="img9" class="hide popUp views">
+            <button onclick="document.getElementById('img9').style.display='none'">X</button>
+            <figcaption>Bedroom 3</figcaption>
+            <img src="br_photo9.png" alt="Image 9: Bedroom 3" class="photo">
+        </figure>
+    </div>
+    <script src="views.js"></script>
 </body>
 
 </html>
