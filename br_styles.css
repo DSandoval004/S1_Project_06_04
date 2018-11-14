@@ -14,8 +14,10 @@
 */
 
 /* html and body */
+/* Set the width and height and the background of HTML, then set the margin, padding, width, height and background of the body, also gave it a box shadow. */
 html {
     width: 100%;
+    height: 100%;
     background-image: url(br_paper.png);
 }
 
@@ -30,6 +32,7 @@ body {
 }
 
 /* Basic Preset Styles */
+/* Some basic styles that affect multiple element in multiple sections. */
 .hide {
     display: none;
 }
@@ -42,6 +45,7 @@ body a {
 }
 
 /* Rows and Columns */
+/* Style for grids. */
 .row {
     clear: both;
 }
@@ -57,11 +61,13 @@ body a {
 }
 
 /* Header */
+/* Gives the Header a gray background. */
 body header {
     background: gray;
 }
 
 /* Nav Bar */
+/* Made the top nav bar horizontal and go all the way across, and for the hover effect I aplied a filter of invert, also their is a linear gradient applied as the background for the list items. */
 nav#topNavBar {
     clear: both;
     width: 100%;
@@ -81,6 +87,7 @@ nav#topNavBar ul li:active {
 }
 
 /* Aside */
+/* Cause the aside with the listing information to appear in a box with curved border and a radial gradient as the background. */
 body aside {
     width: 90%;
     padding: 10px 10px;
@@ -96,6 +103,7 @@ body aside {
 }
 
 /* Article */
+/* Set the width, padding and margin of the article element. */
 body article {
     width: 98%;
     padding: 10px 10px;
@@ -103,6 +111,7 @@ body article {
 }
 
 /* Article Links */
+/* This effects the links bellow the article, make them appear in a small box with curved edges, it is also horozontal and not vertical, the hover affect applies a background of a radial gradient. */
 nav#moInfo {
     clear: both;
     width: 100%;
@@ -129,7 +138,7 @@ nav#moInfo ul li:active {
 }
 
 /* Different Views */
-
+/* Gave the box that the different views appear in a border with curved edges and have a box shadow and a radial gradient. Then set the width and heigth of where the selections appear and in a seprate rule the same thing but for where the photos appear. Then gave the photos that appear a z-index of 1 so that they float above the viewbox, also gave them an absolute position.  */
 div#viewBox {
     width: 95%;
     min-height: 235px;
@@ -191,7 +200,8 @@ figure.views {
     width: 100%;
     height: 100%;
     padding: 5px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
     border: 1px solid gray;
     border-radius: 15px;
     box-shadow: 5px 5px 10px;
@@ -212,6 +222,7 @@ figure.popUp {
 figure.views button {
     background-color: red;
     clear: both;
+    color: black;
     float: right;
     width: 30px;
     height: 20px;

@@ -1,4 +1,4 @@
-// onClick to have popUp Happen
+// When the li is clicked a popUp shows up with a zoomed in picture of the image that was selected.
 function popUp1() {
     document.getElementById('img1').style.display = 'block'
 }

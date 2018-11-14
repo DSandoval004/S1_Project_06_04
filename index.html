@@ -13,19 +13,20 @@
 
     Filename: index.html
    -->
-
+    <!-- Put in title of webpage, and linked the stylesheets. -->
     <meta charset="utf-8" />
-    <title>Browyer Realty Listing 2048</title>
+    <title>Browyer Realty: Listing 2048</title>
     <link rel="stylesheet" href="br_reset.css">
     <link rel="stylesheet" href="br_styles.css">
 
 </head>
 
 <body>
+    <!-- Header Tag: top nav bar and logo. -->
     <header>
         <img src="br_logo.png" alt="">
-        <!-- Top Nav Bar -->
         <nav id="topNavBar">
+            <!-- br_listing2048.txt; content from "Links" section-->
             <ul>
                 <li><a href="#">Residential</a></li>
                 <li><a href="#">Business</a></li>
@@ -35,9 +36,12 @@
             </ul>
         </nav>
     </header>
+    <!-- Start1Row -->
     <div class="row">
+        <!-- Coloumn 25% or 1/4 of the body -->
         <div class="col-1-4">
             <aside>
+                <!-- br_listing2048.txt; content from "Listing Description" section -->
                 <h2>Address:</h2>
                 <h3> Listing 2048</h3>
                 <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Mandel Road <br /> Owatonna, MN 55060</a></p>
@@ -51,8 +55,10 @@
                 <p>2-1/2 </p>
             </aside>
         </div>
+        <!-- Coloumn 75% or 3/4 of the body -->
         <div class="col-3-4">
             <article>
+                <!-- br_listing2048.txt; content from "Listing 20481" section -->
                 <p>
                     Paradise found! This custom-built brand new home sits proudly on a 6.8-acre
                     high wooded site overlooking a 300-acre nature conservancy. The setting is
@@ -69,6 +75,7 @@
                     basement for more living space.
                 </p>
                 <nav id="moInfo">
+                    <!-- br_listing2048.txt; content from "Links(2)" section -->
                     <ul>
                         <li><a href="#">More Details</a></li>
                         <li><a href="#">Map</a></li>
@@ -79,9 +86,12 @@
             </article>
         </div>
     </div>
+    <!-- End1Row  -->
+    <!-- Start2Row -->
     <div class="row">
         <div id="viewBox">
             <div id="selectorBox">
+                <!-- Element to hover over to have that view appear, also to click on to have a zoomed in picture appear. Used JavaScript. -->
                 <p>Hover over to see Image pop up in the box, click on the view to have a zoomed in picture pop up.</p>
                 <ul>
                     <li onclick="popUp1()" id="view1" class="views" onmouseenter="appear1()" onmouseout="disappear1()">Front
@@ -104,6 +114,7 @@
                 </ul>
             </div>
             <div id="photoBox">
+                <!-- Where the pictures appear, all images are hidden. -->
                 <img src="br_photo1.png" alt="Image 1: Front View" class="hide photos" id="photo1">
                 <img src="br_photo2.png" alt="Image 2: Rear View" class="hide photos" id="photo2">
                 <img src="br_photo3.png" alt="Image 3: Side View" class="hide photos" id="photo3">
@@ -116,7 +127,9 @@
             </div>
         </div>
     </div>
+    <!-- End2Row -->
     <div>
+        <!-- The Boxes that pop up to display the zoomed in picture. -->
         <figure id="img1" class="hide popUp views">
             <button onclick="X1()">X</button>
             <figcaption>Front View</figcaption>
@@ -163,6 +176,7 @@
             <img src="br_photo9.png" alt="Image 9: Bedroom 3" class="photo">
         </figure>
     </div>
+    <!-- Link to the JavaScript -->
     <script src="views.js"></script>
 </body>
 
