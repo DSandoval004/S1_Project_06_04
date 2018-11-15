@@ -138,7 +138,7 @@ nav#moInfo ul li:active {
 }
 
 /* Different Views */
-/* Gave the box that the different views appear in a border with curved edges and have a box shadow and a radial gradient. Then set the width and heigth of where the selections appear and in a seprate rule the same thing but for where the photos appear. Then gave the photos that appear a z-index of 1 so that they float above the viewbox, also gave them an absolute position.  */
+/* Gave the box that the different views appear in a border with curved edges and have a box shadow and a radial gradient. Then set the width and heigth of where the selections appear and in a seprate rule the same thing but for where the photos appear. Then gave the photos that appear a z-index of 1 so that they float above the viewbox, also gave them an absolute position. Then gave the list item tags a border and curved the corners. Then made the hover effect a radial gradient. Then set up the pargraph tag so it wouldn't take up to much space. */
 div#viewBox {
     width: 95%;
     min-height: 235px;
@@ -196,6 +196,7 @@ div#viewBox p {
 }
 
 /* Pop-Up Figure Styles */
+/* Made the figure that pop up when you click on the view take up the whole page, have an opaque background, and the text be white. Then floated the pop up above the webpage. Gave the figure an X button to hide it, but made it red, and made it look like a trapizoid but used the transform to make it look like a tapizoid. Then made the photo that pop up larger then what it is orginaly. Then gave the fig caption some margin and text shadow. */
 figure.views {
     width: 100%;
     height: 100%;
@@ -226,6 +227,11 @@ figure.views button {
     float: right;
     width: 30px;
     height: 20px;
+    transform: perspective(50px) rotateX(20deg);
+    -webkit-transform: perspective(50px) rotateX(20deg);
+    -moz-transform: perspective(50px) rotateX(20deg);
+    -ms-transform: perspective(50px) rotateX(20deg);
+    -o-transform: perspective(50px) rotateX(20deg);
 }
 
 figure.views img.photo {
@@ -236,4 +242,5 @@ figure.views img.photo {
 
 figure.views figcaption {
     margin-left: 5px;
+    text-shadow: 0px 0px 50px;
 }
